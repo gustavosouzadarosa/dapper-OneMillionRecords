@@ -20,6 +20,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.MapGet("/", () => Results.Redirect("/IndexNew"));
 app.MapRazorPages();
 
 app.Run();
